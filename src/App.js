@@ -1,3 +1,4 @@
+/* eslint-disable @upleveled/upleveled/no-unnecessary-interpolations */
 import './App.css';
 import randomColor from 'randomcolor'; // import the script
 import React, { useState } from 'react';
@@ -19,7 +20,6 @@ function App() {
     <div
       className="App"
       style={{
-        // eslint-disable-next-line @upleveled/upleveled/no-unnecessary-interpolations
         backgroundColor: `${hex}`,
         minHeight: '33.34vh',
         overflow: 'hidden',
@@ -86,11 +86,5 @@ function App() {
     </div>
   );
 }
-
-// Form for later use to continue with the stretch points
-// <form>
-//   <input style={{ borderRadius: '14px', width: '75px' }} type="text" />
-// </form>
-// ---------------------------------------------------------------------------------------
 
 export default App;

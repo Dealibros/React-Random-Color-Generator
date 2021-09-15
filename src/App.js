@@ -10,7 +10,6 @@ function App() {
   const [hex, setHex] = useState('#78d3d2');
   const randomizedHex = function (tono) {
     const color = randomColor({ hue: tono });
-
     setHex(color);
   };
 
@@ -20,7 +19,7 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundColor: `${hex}`,
+        backgroundColor: { hex },
         minHeight: '33.34vh',
         overflow: 'hidden',
         zoom: 2,

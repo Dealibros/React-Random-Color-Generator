@@ -19,7 +19,7 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundColor: { hex },
+        backgroundColor: `${hex}`,
         minHeight: '33.34vh',
         overflow: 'hidden',
         zoom: 2,

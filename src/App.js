@@ -1,4 +1,3 @@
-/* eslint-disable @upleveled/upleveled/no-unnecessary-interpolations */
 import './App.css';
 import randomColor from 'randomcolor'; // import the script
 import React, { useState } from 'react';
@@ -8,8 +7,8 @@ import FirstButton from './FirstButton';
 
 function App() {
   const [hex, setHex] = useState('#78d3d2');
-  const randomizedHex = function (tono) {
-    const color = randomColor({ hue: tono });
+  const randomizedHex = function (tone) {
+    const color = randomColor({ hue: tone });
     setHex(color);
   };
 
@@ -19,7 +18,7 @@ function App() {
     <div
       className="App"
       style={{
-        backgroundColor: `${hex}`,
+        backgroundColor: hex,
         minHeight: '33.34vh',
         overflow: 'hidden',
         zoom: 2,
@@ -33,44 +32,44 @@ function App() {
 
         <FirstButton
           color="pink"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#c13f2e' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#c13f2e' }}
         />
 
         <FirstButton
           color="yellow"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#f7ce18' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#f7ce18' }}
         />
 
         <FirstButton
           color="green"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#bae0bb' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#bae0bb' }}
         />
 
         <FirstButton
           color="blue"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#78d3d2' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#78d3d2' }}
         />
 
         <FirstButton
           color="pink"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#f799c2' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#f799c2' }}
         />
 
         <FirstButton
           color="purple"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#9449bc' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#9449bc' }}
         />
 
         <FirstButton
           color="orange"
-          handler={randomizedHex}
-          estilo={{ backgroundColor: '#e88d43' }}
+          change={randomizedHex}
+          styling={{ backgroundColor: '#e88d43' }}
         />
 
         <span className="color" />

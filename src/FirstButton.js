@@ -1,5 +1,3 @@
-import './App.css';
-
 // import randomColor from 'randomcolor'; // import the script
 
 function FirstButton(props) {
@@ -7,9 +5,9 @@ function FirstButton(props) {
   return (
     <button
       className="button"
-      style={{ ...props.estilo }}
+      style={{ ...props.styling }}
       onClick={() => {
-        props.handler(props.color);
+        props.change(props.color);
       }}
     >
       o
